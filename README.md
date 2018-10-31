@@ -1,5 +1,5 @@
 # webim
-> edu
+> 选用WebSocket+Vue模仿微信公众客服平台做的一个及时通讯平台，支持新客户接入，及时聊天，48小时过期，客服转入等功能，
 ## 开发须知
 
 
@@ -30,5 +30,3 @@ npm run e2e
 # run all tests
 npm test
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
