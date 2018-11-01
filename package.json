@@ -6,15 +6,11 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "dev-test": "cross-env API_URL=http://webim-api.ministudy.com/  webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "tangxin": "cross-env API_URL=http://qa-webim-api.tangxin.com/ node build/build.js",
-    "build-test": "cross-env API_URL=http://qa-webim-api.toutiao.com/ node build/build.js",
-    "build": "cross-env API_URL=http://webim-api.ministudy.com/ node build/build.js"
+    "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs"  
   },
   "dependencies": {
     "axios": "^0.18.0",
