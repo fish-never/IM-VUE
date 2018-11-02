@@ -5,13 +5,12 @@ let axios = Axios.create({});
 
 
 if (process.env.NODE_ENV == 'development') {
-    axios.defaults.baseURL = API_URL||"http://qa-webim-api.toutiao.com";
-    // axios.defaults.baseURL = "http://webim-api.ministudy.com";
+    axios.defaults.baseURL = API_URL;
+
 } else if (process.env.NODE_ENV == 'debug') {
     axios.defaults.baseURL = '';
 } else if (process.env.NODE_ENV == 'production') {
-    axios.defaults.baseURL =  API_URL||"http://qa-webim-api.toutiao.com";
-    // axios.defaults.baseURL = "http://manage-api-toutiao.ministudy.com";
+    axios.defaults.baseURL =  API_URL;
 }
 let exceptionHandler;
 axios.defaults.headers.post['X-Requested-With'] = 'XMLHttpRequest';
